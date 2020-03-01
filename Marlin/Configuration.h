@@ -415,7 +415,7 @@
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
 #define TEMP_SENSOR_7 0
-#define TEMP_SENSOR_BED 0
+#define TEMP_SENSOR_BED 1
 #define TEMP_SENSOR_PROBE 0
 #define TEMP_SENSOR_CHAMBER 0
 
@@ -484,9 +484,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Ender 3
-  #define DEFAULT_Kp 29.94
-  #define DEFAULT_Ki 2.96
-  #define DEFAULT_Kd 75.63  
+  #define DEFAULT_Kp 26.66
+  #define DEFAULT_Ki 2.19
+  #define DEFAULT_Kd 81.03
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -551,9 +551,9 @@
   //#define DEFAULT_bedKd 1675.16
 
   // Creality Ender-3
-  #define DEFAULT_bedKp 236.94
-  #define DEFAULT_bedKi 39.95
-  #define DEFAULT_bedKd 936.86  
+  #define DEFAULT_bedKp 176.61
+  #define DEFAULT_bedKi 31.28
+  #define DEFAULT_bedKd 664.69
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -740,7 +740,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 145 }
 
 /**
  * Default Max Feed Rate (mm/s)
