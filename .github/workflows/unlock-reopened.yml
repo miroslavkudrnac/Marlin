@@ -10,8 +10,17 @@ on:
     types: [reopened]
 
 jobs:
+<<<<<<< HEAD
   lock:
     runs-on: ubuntu-latest
+=======
+  unlock:
+    name: Unlock Reopened
+    if: github.repository == 'MarlinFirmware/Marlin'
+
+    runs-on: ubuntu-latest
+
+>>>>>>> upstream/2.0.x
     steps:
     - uses: OSDKDev/unlock-issues@v1.1
       with:
